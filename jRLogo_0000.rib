@@ -1,0 +1,1053 @@
+Option "searchpath" "shader" ".:&"
+Option "limits" "eyesplits" [10 ]
+Display "jRLogo_0000.tif" "tiff" "rgb" 
+Format 520 418 1.0
+ShadingRate 1.0
+Clipping 3.0 50.0
+Projection "perspective" "fov"  30.0 
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 1.0 ]
+TransformBegin
+LightSource "distantlight" 1 "to" [0.5 -0.5 -0.70710677 ]"lightcolor" [1.0 1.0 1.0 ]"intensity"  0.75 
+TransformEnd
+TransformBegin
+LightSource "distantlight" 2 "to" [-0.0 -0.0 -1.0 ]"lightcolor" [1.0 1.0 1.0 ]"intensity"  0.75 
+TransformEnd
+# world to camera
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 ]
+WorldBegin
+AttributeBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 ]
+# Disable shadows for background
+Attribute "visibility"  "int transmission" [0]
+Surface "constant" 
+PointsPolygons [4 ] [0 1 2 3 ] "P" [-16.666363 -13.397192 -49.999 16.666363 -13.397192 -49.999 16.666363 13.397192 -49.999 -16.666363 13.397192 -49.999 ]"varying color Cs" [0.88235295 0.88235295 0.88235295 0.88235295 0.88235295 0.88235295 0.88235295 0.88235295 0.88235295 0.88235295 0.88235295 0.88235295 ]"uniform normal N" [0.0 0.0 1.0 ]
+AttributeEnd
+AttributeBegin # sgc 3
+AttributeBegin # sgc 5
+ConcatTransform [0.8535534 0.14644662 0.5 0.0 0.14644662 0.8535534 -0.5 0.0 -0.5 0.5 0.70710677 0.0 0.0 0.0 0.0 1.0 ]
+AttributeEnd # sgc 5
+AttributeBegin # sgc 6
+AttributeEnd # sgc 6
+AttributeBegin # sgc 4
+AttributeEnd # sgc 4
+AttributeBegin # sgc 7
+AttributeBegin # sgc 0
+AttributeBegin # sgc 1
+AttributeBegin
+Color [0.3 0.3 0.4 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+# IndexedFaceSet face-set 1
+PointsPolygons [3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 ] [0 1 2 2 3 0 5 6 7 7 8 9 9 10 11 11 12 13 23 24 25 5 7 9 11 13 14 22 23 25 11 14 15 21 22 25 11 15 16 21 25 5 9 11 16 20 21 5 9 16 17 18 20 5 9 17 18 18 5 9 31 32 33 33 34 35 44 45 46 46 47 48 50 51 52 52 53 54 54 55 56 61 62 63 65 27 67 30 31 33 33 35 36 44 46 48 49 50 52 52 54 56 60 61 63 65 67 68 30 33 36 43 44 48 48 49 52 59 60 63 65 68 69 30 36 37 42 43 48 59 63 64 64 65 69 30 37 38 41 42 48 58 59 64 29 30 38 40 41 48 57 58 64 28 29 38 39 40 48 57 64 69 27 28 38 56 57 69 27 38 39 56 69 70 75 27 39 56 70 71 75 39 48 56 71 72 74 75 48 52 56 72 73 74 48 52 72 73 73 48 52 ] "P" [6.15625 25.0625 0.0 6.15625 28.90625 0.0 10.0 28.90625 0.0 10.0 25.0625 0.0 6.15625 25.0625 0.0 10.0 21.21875 0.0 10.0 0.234375 0.0 9.556641 -3.4501953 0.0 8.2265625 -6.0820312 0.0 6.0097656 -7.661133 0.0 2.90625 -8.1875 0.0 -1.453125 -7.421875 0.0 -1.453125 -2.65625 0.0 0.71875 -2.65625 0.0 0.75 -3.015625 0.0 1.28125 -6.140625 0.0 3.21875 -7.0 0.0 5.421875 -6.1523438 0.0 6.15625 -3.609375 0.0 6.15625 -1.609375 0.0 6.15625 16.15625 0.0 5.8046875 19.132812 0.0 4.21875 19.890625 0.0 2.890625 19.984375 0.0 2.546875 20.0 0.0 2.546875 21.21875 0.0 10.0 21.21875 0.0 22.363281 12.71875 0.0 22.363281 5.0625 0.0 22.488281 3.125 0.0 22.878906 1.6328125 0.0 25.144531 1.234375 0.0 25.503906 1.21875 0.0 25.503906 0.0 0.0 14.691406 0.0 0.0 14.691406 1.21875 0.0 15.066406 1.234375 0.0 16.363281 1.328125 0.0 17.808594 1.7109375 0.0 18.191406 3.125 0.0 18.300781 5.0625 0.0 18.300781 23.84375 0.0 18.191406 25.78125 0.0 17.808594 27.203125 0.0 16.363281 27.59375 0.0 15.066406 27.671875 0.0 14.691406 27.71875 0.0 14.691406 28.90625 0.0 21.644531 28.90625 0.0 23.550781 28.953125 0.0 25.160156 29.0 0.0 26.722656 29.046875 0.0 30.646484 28.589844 0.0 33.44922 27.21875 0.0 35.13086 24.933594 0.0 35.691406 21.734375 0.0 34.195312 16.671875 0.0 29.707031 13.609375 0.0 35.378906 5.09375 0.0 37.191406 2.578125 0.0 39.30078 1.296875 0.0 40.61328 1.234375 0.0 41.003906 1.21875 0.0 41.003906 0.0 0.0 33.628906 0.0 0.0 25.738281 12.71875 0.0 22.363281 12.71875 0.0 22.410156 14.046875 0.0 23.847656 14.046875 0.0 27.197266 14.5 0.0 29.589844 15.859375 0.0 31.02539 18.125 0.0 31.503906 21.296875 0.0 30.066406 26.164062 0.0 25.175781 27.59375 0.0 22.410156 27.59375 0.0 22.410156 14.046875 0.0 ]"N" [0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 0.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 0.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+# IndexedLineSet face-set 1
+AttributeBegin # BAS
+AttributeBegin # sticks
+AttributeBegin # sgc 13
+ConcatTransform [0.014429474 -0.02025659 -0.0025418138 0.0 0.0014747236 -0.0020702675 0.024870448 0.0 -2.2167969 -1.5791016 0.0 0.0 7.118164 -6.871582 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 13
+AttributeBegin # sgc 14
+ConcatTransform [0.02464424 0.0 -0.004202546 0.0 -0.004202546 0.0 -0.02464424 0.0 0.0 3.84375 0.0 0.0 6.15625 26.984375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 14
+AttributeBegin # sgc 15
+ConcatTransform [0.022714868 0.0 -0.010441973 0.0 -0.010441973 0.0 -0.022714868 0.0 0.0 1.21875 0.0 0.0 2.546875 20.609375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 15
+AttributeBegin # sgc 16
+ConcatTransform [0.008904552 -0.023143629 -0.0031751283 0.0 -0.0011401568 0.0029633567 -0.024797551 0.0 2.203125 0.84765625 0.0 0.0 4.3203125 -6.576172 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 16
+AttributeBegin # sgc 17
+ConcatTransform [0.0 0.0249808 -9.796026E-4 0.0 0.0 9.796026E-4 0.0249808 0.0 3.84375 0.0 0.0 0.0 8.078125 25.0625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 17
+AttributeBegin # sgc 18
+ConcatTransform [0.02496266 0.0 -0.0013658841 0.0 -0.0013658841 0.0 -0.02496266 0.0 0.0 18.78125 0.0 0.0 18.300781 14.453125 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 18
+AttributeBegin # sgc 19
+ConcatTransform [0.024981005 0.0 -9.7439636E-4 0.0 9.7439636E-4 0.0 0.024981005 0.0 0.0 -1.21875 0.0 0.0 25.503906 0.609375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 19
+AttributeBegin # sgc 20
+ConcatTransform [0.013861377 -0.020314697 -0.0044917 0.0 0.0025316423 -0.003710277 0.024593184 0.0 -4.4882812 -3.0625 0.0 0.0 31.951172 15.140625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 20
+AttributeBegin # sgc 21
+ConcatTransform [-6.142004E-4 0.024977483 -8.6492026E-4 0.0 -2.1262103E-5 8.646589E-4 0.024985034 0.0 1.90625 0.046875 0.0 0.0 22.597656 28.929688 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 21
+AttributeBegin # sgc 22
+ConcatTransform [0.023967212 0.0070785987 -6.827793E-4 0.0 -6.548169E-4 -1.9339698E-4 -0.024990674 0.0 -1.4375 4.8671875 0.0 0.0 30.785156 23.730469 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 22
+AttributeBegin # sgc 23
+ConcatTransform [0.021231016 0.013171576 -8.6807215E-4 0.0 -7.3764694E-4 -4.576311E-4 -0.024984924 0.0 -7.890625 12.71875 0.0 0.0 29.683594 6.359375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 23
+AttributeBegin # sgc 24
+ConcatTransform [0.0 -0.0028048514 -0.024842158 0.0 0.0 -0.024842158 0.0028048514 0.0 -7.375 0.0 0.0 0.0 37.316406 0.0 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 24
+AttributeBegin # sgc 25
+ConcatTransform [0.023754496 -0.0068599773 -0.0036965776 0.0 -0.0035514515 0.0010256112 -0.024725197 0.0 0.734375 2.5429688 0.0 0.0 5.7890625 -4.8808594 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 25
+AttributeBegin # sgc 26
+ConcatTransform [0.004153574 -0.024489904 -0.0028270902 0.0 4.727335E-4 -0.0027872857 0.024839638 0.0 -3.1035156 -0.5263672 0.0 0.0 4.458008 -7.9243164 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 26
+AttributeBegin # sgc 27
+ConcatTransform [0.0 0.02498558 -8.4900454E-4 0.0 0.0 8.4900454E-4 0.02498558 0.0 3.84375 0.0 0.0 0.0 8.078125 28.90625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 27
+AttributeBegin # sgc 28
+ConcatTransform [0.020797323 0.013852162 -7.674395E-4 0.0 6.387285E-4 4.2542836E-4 0.02498822 0.0 5.671875 -8.515625 0.0 0.0 32.54297 9.3515625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 28
+AttributeBegin # sgc 29
+ConcatTransform [-7.2740763E-4 0.024974328 -8.682438E-4 0.0 -2.5277935E-5 8.6787576E-4 0.024984919 0.0 1.609375 0.046875 0.0 0.0 24.355469 28.976562 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 29
+AttributeBegin # sgc 30
+ConcatTransform [0.024927882 0.0014072192 -0.0012729559 0.0 -0.0012709324 -7.174618E-5 -0.024967572 0.0 -0.109375 1.9375 0.0 0.0 18.246094 24.8125 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 30
+AttributeBegin # sgc 31
+ConcatTransform [0.0 -0.0028048514 -0.024842158 0.0 0.0 -0.024842158 0.0028048514 0.0 -10.8125 0.0 0.0 0.0 20.097656 0.0 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 31
+AttributeBegin # sgc 32
+ConcatTransform [0.0070116967 0.023985367 -7.337037E-4 0.0 -2.0586899E-4 -7.0422946E-4 -0.024989232 0.0 -4.890625 1.4296875 0.0 0.0 27.621094 26.878906 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 32
+AttributeBegin # sgc 33
+ConcatTransform [-0.0042903684 -0.024428831 -0.003134481 0.0 -5.422017E-4 -0.0030872298 0.024802722 0.0 -4.359375 0.765625 0.0 0.0 0.7265625 -7.8046875 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 33
+AttributeBegin # sgc 34
+ConcatTransform [0.024870656 0.0 -0.0025397833 0.0 0.0025397833 0.0 0.024870656 0.0 0.0 -3.84375 0.0 0.0 10.0 26.984375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 34
+AttributeBegin # sgc 35
+ConcatTransform [0.02464424 0.0 -0.004202546 0.0 -0.004202546 0.0 -0.02464424 0.0 0.0 2.0 0.0 0.0 6.15625 -2.609375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 35
+AttributeBegin # sgc 36
+ConcatTransform [0.02412008 0.0064938674 -0.0010254078 0.0 -9.9015E-4 -2.6657883E-4 -0.024978962 0.0 -0.3828125 1.421875 0.0 0.0 18.0 26.492188 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 36
+AttributeBegin # sgc 37
+ConcatTransform [0.024941461 0.0 -0.0017098362 0.0 -0.0017098362 0.0 -0.024941461 0.0 0.0 1.21875 0.0 0.0 14.691406 0.609375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 37
+AttributeBegin # sgc 38
+ConcatTransform [0.020273661 0.01460711 -7.816943E-4 0.0 6.342223E-4 4.569552E-4 0.024987776 0.0 1.8125 -2.515625 0.0 0.0 36.285156 3.8359375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 38
+AttributeBegin # sgc 39
+ConcatTransform [-7.492098E-4 0.024973659 -8.689323E-4 0.0 -2.6056246E-5 8.6854154E-4 0.024984894 0.0 1.5625 0.046875 0.0 0.0 25.941406 29.023438 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 39
+AttributeBegin # sgc 40
+ConcatTransform [0.0 0.024984172 -8.8949973E-4 0.0 0.0 -8.8949973E-4 -0.024984172 0.0 -2.765625 0.0 0.0 0.0 23.792969 27.59375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 40
+AttributeBegin # sgc 41
+ConcatTransform [0.012964781 0.021344457 -0.0011526584 0.0 5.983949E-4 9.851623E-4 0.024973413 0.0 2.109375 -1.28125 0.0 0.0 38.246094 1.9375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 41
+AttributeBegin # sgc 42
+ConcatTransform [0.0028909734 0.024820367 -7.692313E-4 0.0 8.899523E-5 7.6406583E-4 0.024988163 0.0 3.9238281 -0.45703125 0.0 0.0 28.68457 28.81836 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 42
+AttributeBegin # sgc 43
+ConcatTransform [0.0065194136 0.02412183 -7.9661846E-4 0.0 -2.0784495E-4 -7.690263E-4 -0.024987305 0.0 -1.4453125 0.390625 0.0 0.0 17.085938 27.398438 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 43
+AttributeBegin # sgc 44
+ConcatTransform [-4.8335316E-4 0.011600476 -0.022140356 0.0 -9.2171505E-4 0.022121161 0.0116105415 0.0 0.375 0.015625 0.0 0.0 14.878906 1.2265625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 44
+AttributeBegin # sgc 45
+ConcatTransform [0.024975186 0.0 -0.0011135867 0.0 0.0011135867 0.0 0.024975186 0.0 0.0 -7.65625 0.0 0.0 22.363281 8.890625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 45
+AttributeBegin # sgc 46
+ConcatTransform [0.02464424 0.0 -0.004202546 0.0 -0.004202546 0.0 -0.02464424 0.0 0.0 17.765625 0.0 0.0 6.15625 7.2734375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 46
+AttributeBegin # sgc 47
+ConcatTransform [-0.022154672 0.0 -0.011583202 0.0 -0.011583202 0.0 0.022154672 0.0 0.0 4.765625 0.0 0.0 -1.453125 -5.0390625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 47
+AttributeBegin # sgc 48
+ConcatTransform [0.0 0.02493861 -0.001750939 0.0 0.0 0.001750939 0.02493861 0.0 1.4375 0.0 0.0 0.0 23.128906 14.046875 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 48
+AttributeBegin # sgc 49
+ConcatTransform [0.0 -0.023569454 -0.008335519 0.0 0.0 0.008335519 -0.023569454 0.0 2.171875 0.0 0.0 0.0 -0.3671875 -2.65625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 49
+AttributeBegin # sgc 50
+ConcatTransform [0.024923975 0.0016079984 -0.0010999157 0.0 0.0010976337 7.0815084E-5 0.024975792 0.0 0.125 -1.9375 0.0 0.0 22.425781 4.09375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 50
+AttributeBegin # sgc 51
+ConcatTransform [0.024623144 0.0029082454 -0.0032004472 0.0 -0.0031783548 -3.7539622E-4 -0.024794297 0.0 -0.3515625 2.9765625 0.0 0.0 5.9804688 17.644531 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 51
+AttributeBegin # sgc 52
+ConcatTransform [0.0015024069 0.024939956 -8.6105405E-4 0.0 -5.1776864E-5 -8.5949595E-4 -0.024985168 0.0 -1.296875 0.078125 0.0 0.0 15.714844 27.632812 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 52
+AttributeBegin # sgc 53
+ConcatTransform [-1.1917514E-4 0.0016485895 -0.0249453 0.0 -0.0017985813 0.024880376 0.0016528914 0.0 1.296875 0.09375 0.0 0.0 15.714844 1.28125 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 53
+AttributeBegin # sgc 54
+ConcatTransform [0.0011317475 0.023766696 -0.007672242 0.0 3.6493133E-4 0.0076635582 0.023793628 0.0 1.3125 -0.0625 0.0 0.0 39.95703 1.265625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 54
+AttributeBegin # sgc 55
+ConcatTransform [0.010982387 0.02244975 -6.29197E-4 0.0 2.7649096E-4 5.651917E-4 0.024992082 0.0 2.8027344 -1.3710938 0.0 0.0 32.04785 27.904297 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 55
+AttributeBegin # sgc 56
+ConcatTransform [-0.003337394 0.024670823 -0.0022830518 0.0 -3.0605664E-4 0.0022624445 0.024895536 0.0 3.3496094 0.453125 0.0 0.0 25.52246 14.2734375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 56
+AttributeBegin # sgc 57
+ConcatTransform [0.0 0.024973184 -0.001157632 0.0 0.0 -0.001157632 -0.024973184 0.0 -7.453125 0.0 0.0 0.0 6.2734375 21.21875 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 57
+AttributeBegin # sgc 58
+ConcatTransform [9.919861E-4 0.02281568 -0.010171563 0.0 4.418245E-4 0.010161963 0.022837235 0.0 0.359375 -0.015625 0.0 0.0 25.324219 1.2265625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 58
+AttributeBegin # sgc 59
+ConcatTransform [0.024161404 0.006324975 -0.0011050942 0.0 0.0010690701 2.7986127E-4 0.024975564 0.0 0.390625 -1.4921875 0.0 0.0 22.683594 2.3789062 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 59
+AttributeBegin # sgc 60
+ConcatTransform [0.010764959 0.02252873 -0.0012537866 0.0 -5.405587E-4 -0.0011312724 -0.02496854 0.0 -1.5859375 0.7578125 0.0 0.0 5.0117188 19.511719 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 60
+AttributeBegin # sgc 61
+ConcatTransform [0.0015137824 1.3163326E-4 -0.02495378 0.0 0.024859969 0.0021617364 0.0015194948 0.0 0.03125 -0.359375 0.0 0.0 0.734375 -2.8359375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 61
+AttributeBegin # sgc 62
+ConcatTransform [0.024870656 0.0 -0.0025397833 0.0 0.0025397833 0.0 0.024870656 0.0 0.0 -20.984375 0.0 0.0 10.0 10.7265625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 62
+AttributeBegin # sgc 63
+ConcatTransform [9.405906E-4 0.023514764 -0.0084363 0.0 3.3718237E-4 0.008429559 0.02353357 0.0 0.390625 -0.015625 0.0 0.0 40.808594 1.2265625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 63
+AttributeBegin # sgc 64
+ConcatTransform [0.020130185 0.014813751 -5.7311694E-4 0.0 4.615993E-4 3.3968975E-4 0.02499343 0.0 1.6816406 -2.2851562 0.0 0.0 34.29004 26.076172 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 64
+AttributeBegin # sgc 65
+ConcatTransform [0.0030991249 0.024792999 -8.38256E-4 0.0 -1.0397286E-4 -8.317829E-4 -0.024985943 0.0 -0.375 0.046875 0.0 0.0 14.878906 27.695312 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 65
+AttributeBegin # sgc 66
+ConcatTransform [0.0060661375 -0.022902763 -0.007979063 0.0 -0.0020429287 0.0077130985 -0.0236925 0.0 1.4453125 0.3828125 0.0 0.0 17.085938 1.5195312 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 66
+AttributeBegin # sgc 67
+ConcatTransform [0.0073032505 -0.01285414 -0.020160198 0.0 -0.009959082 0.017528556 -0.014783991 0.0 2.3925781 1.359375 0.0 0.0 28.393555 15.1796875 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 67
+AttributeBegin # sgc 68
+ConcatTransform [-0.0048638284 -8.268508E-4 -0.024508355 0.0 0.024161706 0.00410749 -0.00493361 0.0 0.53125 -3.125 0.0 0.0 1.015625 -4.578125 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 68
+AttributeBegin # sgc 69
+ConcatTransform [0.024690289 -0.002970949 -0.0025618572 0.0 0.0025435097 -3.0605707E-4 0.024868391 0.0 -0.44335938 -3.6845703 0.0 0.0 9.77832 -1.6079102 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 69
+AttributeBegin # sgc 70
+ConcatTransform [0.004260459 0.024226138 -0.004465727 0.0 7.734822E-4 0.004398232 0.024597913 0.0 2.265625 -0.3984375 0.0 0.0 24.011719 1.4335938 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 70
+AttributeBegin # sgc 71
+ConcatTransform [0.0017582226 0.024908153 -0.0012217138 0.0 -8.602457E-5 -0.0012186815 -0.024970131 0.0 -1.328125 0.09375 0.0 0.0 3.5546875 19.9375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 71
+AttributeBegin # sgc 72
+ConcatTransform [0.024941461 0.0 -0.0017098362 0.0 -0.0017098362 0.0 -0.024941461 0.0 0.0 1.1875 0.0 0.0 14.691406 28.3125 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 72
+AttributeBegin # sgc 73
+ConcatTransform [0.024088357 -0.0065211575 -0.0014918491 0.0 -0.0014400139 3.89838E-4 -0.024955448 0.0 0.3828125 1.4140625 0.0 0.0 18.0 2.4179688 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 73
+AttributeBegin # sgc 74
+ConcatTransform [0.024992738 0.0 -6.025482E-4 0.0 6.025482E-4 0.0 0.024992738 0.0 0.0 -1.21875 0.0 0.0 41.003906 0.609375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 74
+AttributeBegin # sgc 75
+ConcatTransform [0.024974972 -7.8702644E-5 -0.001115608 0.0 -0.0011156024 3.515554E-6 -0.024975097 0.0 0.046875 14.875 0.0 0.0 22.386719 20.15625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 75
+AttributeBegin # sgc 76
+ConcatTransform [0.024616908 0.0043132193 -6.3556834E-4 0.0 6.260314E-4 1.09689274E-4 0.02499192 0.0 0.5605469 -3.1992188 0.0 0.0 35.411133 23.333984 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 76
+AttributeBegin # sgc 77
+ConcatTransform [0.021079376 -0.013356329 -0.0015061125 0.0 -0.0012722273 8.061095E-4 -0.024954591 0.0 1.4355469 2.265625 0.0 0.0 30.307617 16.992188 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 77
+AttributeBegin # sgc 78
+ConcatTransform [0.0 0.02498558 -8.4900454E-4 0.0 0.0 8.4900454E-4 0.02498558 0.0 6.953125 0.0 0.0 0.0 18.167969 28.90625 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 78
+AttributeBegin # sgc 79
+ConcatTransform [0.0 0.024925055 -0.0019343268 0.0 0.0 0.0019343268 0.024925055 0.0 3.375 0.0 0.0 0.0 24.050781 12.71875 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 79
+AttributeBegin # sgc 80
+ConcatTransform [0.024958577 -8.80891E-4 -0.0011372943 0.0 -0.0011365867 4.0114825E-5 -0.024974119 0.0 0.046875 1.328125 0.0 0.0 22.386719 13.3828125 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 80
+AttributeBegin # sgc 81
+ConcatTransform [-0.009971832 -0.022481948 -0.004486049 0.0 0.0018188881 0.004100766 -0.024594214 0.0 1.9375 -0.859375 0.0 0.0 2.25 -6.5703125 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 81
+AttributeBegin # sgc 82
+ConcatTransform [0.024704728 -0.0037270065 -8.8647177E-4 0.0 -8.76553E-4 1.322386E-4 -0.02498428 0.0 0.47851562 3.171875 0.0 0.0 31.264648 19.710938 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 82
+AttributeBegin # sgc 83
+ConcatTransform [0.02396004 -0.0070807836 -8.825984E-4 0.0 8.4641133E-4 -2.5013546E-4 0.024984416 0.0 -1.4960938 -5.0625 0.0 0.0 34.94336 19.203125 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 83
+AttributeBegin # sgc 84
+ConcatTransform [0.024921667 -0.0014068682 -0.0013897115 0.0 -0.0013875024 7.832675E-5 -0.024961345 0.0 0.109375 1.9375 0.0 0.0 18.246094 4.09375 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 84
+AttributeBegin # sgc 85
+ConcatTransform [0.0011338308 0.024944277 -0.0012237277 0.0 -5.5566612E-5 -0.0012224654 -0.024970032 0.0 -0.34375 0.015625 0.0 0.0 2.71875 19.992188 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 85
+AttributeBegin # sgc 86
+ConcatTransform [0.022201208 -0.011220054 -0.0024933445 0.0 0.0022253054 -0.0011246256 0.024875354 0.0 -1.3300781 -2.631836 0.0 0.0 8.891602 -4.7661133 0.0 1.0 ]
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+Cylinder 1.0 -.5 .5 360
+AttributeEnd
+AttributeEnd # sgc 86
+AttributeEnd # sticks
+AttributeEnd # BAS
+AttributeBegin
+Color [0.1 0.1 0.1 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+# PointSet face-set 1
+AttributeBegin
+Opacity [1.0 1.0 1.0 ]
+Color [0.1 0.1 0.1 ]
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 6.15625 25.0625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 6.15625 28.90625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 10.0 28.90625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 10.0 25.0625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 6.15625 25.0625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 10.0 21.21875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 10.0 0.234375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 9.556641 -3.4501953 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 8.2265625 -6.0820312 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 6.0097656 -7.661133 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.90625 -8.1875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.453125 -7.421875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.453125 -2.65625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.71875 -2.65625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.75 -3.015625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.28125 -6.140625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.21875 -7.0 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 5.421875 -6.1523438 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 6.15625 -3.609375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 6.15625 -1.609375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 6.15625 16.15625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 5.8046875 19.132812 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 4.21875 19.890625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.890625 19.984375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.546875 20.0 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.546875 21.21875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 10.0 21.21875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 22.363281 12.71875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 22.363281 5.0625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 22.488281 3.125 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 22.878906 1.6328125 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 25.144531 1.234375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 25.503906 1.21875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 25.503906 0.0 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 14.691406 0.0 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 14.691406 1.21875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 15.066406 1.234375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 16.363281 1.328125 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 17.808594 1.7109375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 18.191406 3.125 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 18.300781 5.0625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 18.300781 23.84375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 18.191406 25.78125 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 17.808594 27.203125 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 16.363281 27.59375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 15.066406 27.671875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 14.691406 27.71875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 14.691406 28.90625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 21.644531 28.90625 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 23.550781 28.953125 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 25.160156 29.0 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 26.722656 29.046875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 30.646484 28.589844 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 33.44922 27.21875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 35.13086 24.933594 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 35.691406 21.734375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 34.195312 16.671875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 29.707031 13.609375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 35.378906 5.09375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 37.191406 2.578125 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 39.30078 1.296875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 40.61328 1.234375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 41.003906 1.21875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 41.003906 0.0 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 33.628906 0.0 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 25.738281 12.71875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 22.363281 12.71875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 22.410156 14.046875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 23.847656 14.046875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 27.197266 14.5 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 29.589844 15.859375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 31.02539 18.125 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 31.503906 21.296875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 30.066406 26.164062 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 25.175781 27.59375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 22.410156 27.59375 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+TransformBegin
+ConcatTransform [1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 22.410156 14.046875 0.0 1.0 ]
+Sphere 0.5 -0.5 0.5 360.0 
+TransformEnd
+AttributeEnd
+AttributeEnd
+AttributeEnd
+AttributeEnd
+AttributeEnd # sgc 1
+AttributeBegin # sgc 2
+AttributeBegin
+Color [1.0 0.9 0.0 ]
+Opacity [1.0 1.0 1.0 ]
+Surface "defaultpolygonshader" "color specularcolor" [1.0 1.0 1.0 ]"float lighting"  1.0 "float Kd"  1.0 "float transparencyenabled"  0.0 "float roughness"  0.016666668 "float Ks"  0.7 "float Ka"  0.0 
+TransformBegin
+Rotate 90 1 0 0
+Torus 20,000000 1,500000 0 360 360
+TransformEnd
+
+AttributeEnd
+AttributeEnd # sgc 2
+AttributeEnd # sgc 0
+AttributeEnd # sgc 7
+AttributeEnd # sgc 3
+WorldEnd

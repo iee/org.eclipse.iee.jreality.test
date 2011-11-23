@@ -1,0 +1,38 @@
+!SESSION 2011-11-21 10:22:36.924 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-21 10:23:29.216
+!MESSAGE System property http.proxyHost is set to SRV-GEOPROXY.georec.spb.ru but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-21 10:23:29.216
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-21 10:23:29.218
+!MESSAGE System property http.proxyHost is set to SRV-GEOPROXY.georec.spb.ru but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-21 10:23:29.219
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+!SESSION 2011-11-21 10:23:59.804 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-21 10:24:07.190
+!MESSAGE System property http.proxyHost is set to SRV-GEOPROXY.georec.spb.ru but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-21 10:24:07.194
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-21 10:24:07.202
+!MESSAGE System property http.proxyHost is set to SRV-GEOPROXY.georec.spb.ru but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2011-11-21 10:24:07.203
+!MESSAGE System property http.proxyPort is set to 8080 but should not be set.
